@@ -37,6 +37,7 @@ header button {
 	background: transparent;
 }
 
+
 main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -220,7 +221,6 @@ main {
 }
 
 .space {
-	/*flex-grow: 1;*/
 	margin: 2em 0;
 	position: relative;	
 }
@@ -233,6 +233,7 @@ main {
 	height: 0;
 	top: 50%;
 }
+
 
 
 
