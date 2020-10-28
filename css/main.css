@@ -13,9 +13,7 @@ body {
 .wrapper {
 	padding: 2em 4em;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 80px auto;
+	
 }
 
 header {
@@ -39,12 +37,14 @@ header button {
 	background: transparent;
 }
 
-aside {
-	grid-column: span 3;
-	padding: 0 2em;
+main {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto 80px;
 }
 
 .menu {
+	grid-column: span 3;
 	display: flex;
 	flex-direction: column;
 	margin-top: 2em;
@@ -99,12 +99,8 @@ aside {
 	align-items: center;
 }
 
-
-main {
-	grid-column: span 9;
-}
-
 .card_list {
+	grid-column: span 9;
 	padding: 1em 1em;
 	display: flex;
 	flex-flow: row wrap;
@@ -156,6 +152,7 @@ main {
 .paginator {
 	text-align: center;
 	margin: 2em 0;
+	grid-column: span 12;
 }
 
 .paginator button {
