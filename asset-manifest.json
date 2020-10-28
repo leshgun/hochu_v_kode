@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/hochu_v_kode/static/js/main.ffcc7b8d.chunk.js",
-    "main.js.map": "/hochu_v_kode/static/js/main.ffcc7b8d.chunk.js.map",
+    "main.js": "/hochu_v_kode/static/js/main.f53d87bc.chunk.js",
+    "main.js.map": "/hochu_v_kode/static/js/main.f53d87bc.chunk.js.map",
     "runtime-main.js": "/hochu_v_kode/static/js/runtime-main.7d3c2c7c.js",
     "runtime-main.js.map": "/hochu_v_kode/static/js/runtime-main.7d3c2c7c.js.map",
-    "static/js/2.32854922.chunk.js": "/hochu_v_kode/static/js/2.32854922.chunk.js",
-    "static/js/2.32854922.chunk.js.map": "/hochu_v_kode/static/js/2.32854922.chunk.js.map",
+    "static/js/2.bb4c58a3.chunk.js": "/hochu_v_kode/static/js/2.bb4c58a3.chunk.js",
+    "static/js/2.bb4c58a3.chunk.js.map": "/hochu_v_kode/static/js/2.bb4c58a3.chunk.js.map",
     "index.html": "/hochu_v_kode/index.html",
-    "static/js/2.32854922.chunk.js.LICENSE.txt": "/hochu_v_kode/static/js/2.32854922.chunk.js.LICENSE.txt"
+    "static/js/2.bb4c58a3.chunk.js.LICENSE.txt": "/hochu_v_kode/static/js/2.bb4c58a3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7d3c2c7c.js",
-    "static/js/2.32854922.chunk.js",
-    "static/js/main.ffcc7b8d.chunk.js"
+    "static/js/2.bb4c58a3.chunk.js",
+    "static/js/main.f53d87bc.chunk.js"
   ]
 }
