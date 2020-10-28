@@ -27,12 +27,13 @@
         </div>
 
         <script type="text/javascript">
+            console.log(window.location.path)
             function isValid(login, pass) {
                 return ((login == 'kode@kode.ru') & (pass == 'Enk0deng'))
             }
             function nextPage(isAuthorised, login, pass) {
                 desternation = (isAuthorised) ? '/' : `/otp?login=${login}&pass=${pass}`
-                window.location.replace(window.location.path + desternation);
+                window.location.replace('hochu_v_kode' + desternation);
             }
             function validatePass () {
                 const form = new FormData(document.forms['form-login'])
