@@ -32,7 +32,7 @@
                 return ((login == 'kode@kode.ru') & (pass == 'Enk0deng'))
             }
             function nextPage(isAuthorised, login, pass) {
-                desternation = (isAuthorised) ? '/hochu_v_kode/' : `otp?login=${login}&pass=${pass}`
+                desternation = (isAuthorised) ? '/hochu_v_kode/' : `otp.html?login=${login}&pass=${pass}`
                 window.location.replace(`${desternation}`);
             }
             function validatePass () {
