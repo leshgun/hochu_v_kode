@@ -32,12 +32,12 @@
                 const newOTP = formdata.get('otp')
                 if (newOTP == OTP) {
                     saveUser();
-                    window.location.replace("/");
+                    window.location.replace(window.location.path + "/");
                 }
                 else alert('Wrong!')
             }
             function saveUser() {
-                const params = new URLSearchParams(location.search);
+                const params = new URLSearchParams(window.location.search);
                 localStorage.setItem('login', params.get('login'));
                 localStorage.setItem('pass', params.get('pass'));
             }
