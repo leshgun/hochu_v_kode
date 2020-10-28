@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/hochu_v_kode/static/js/main.dd5ba5a8.chunk.js",
+    "main.js.map": "/hochu_v_kode/static/js/main.dd5ba5a8.chunk.js.map",
+    "runtime-main.js": "/hochu_v_kode/static/js/runtime-main.7d3c2c7c.js",
+    "runtime-main.js.map": "/hochu_v_kode/static/js/runtime-main.7d3c2c7c.js.map",
+    "static/js/2.3708b07a.chunk.js": "/hochu_v_kode/static/js/2.3708b07a.chunk.js",
+    "static/js/2.3708b07a.chunk.js.map": "/hochu_v_kode/static/js/2.3708b07a.chunk.js.map",
+    "index.html": "/hochu_v_kode/index.html",
+    "static/js/2.3708b07a.chunk.js.LICENSE.txt": "/hochu_v_kode/static/js/2.3708b07a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d3c2c7c.js",
+    "static/js/2.3708b07a.chunk.js",
+    "static/js/main.dd5ba5a8.chunk.js"
+  ]
+}
