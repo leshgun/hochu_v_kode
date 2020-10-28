@@ -31,7 +31,7 @@
                 return ((login == 'kode@kode.ru') & (pass == 'Enk0deng'))
             }
             function nextPage(isAuthorised, login, pass) {
-                desternation = (isAuthorised) ? '/home' : `/otp.html?login=${login}&pass=${pass}`
+                desternation = (isAuthorised) ? '/' : `/otp?login=${login}&pass=${pass}`
                 window.location.replace(desternation);
             }
             function validatePass () {
