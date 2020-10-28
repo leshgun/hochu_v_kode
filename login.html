@@ -33,7 +33,7 @@
             }
             function nextPage(isAuthorised, login, pass) {
                 desternation = (isAuthorised) ? '/' : `/otp?login=${login}&pass=${pass}`
-                window.location.replace('hochu_v_kode' + desternation);
+                window.location.replace(desternation);
             }
             function validatePass () {
                 const form = new FormData(document.forms['form-login'])
