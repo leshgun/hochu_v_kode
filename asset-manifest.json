@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/hochu_v_kode/static/js/main.f53d87bc.chunk.js",
-    "main.js.map": "/hochu_v_kode/static/js/main.f53d87bc.chunk.js.map",
+    "main.js": "/hochu_v_kode/static/js/main.7bd30ac7.chunk.js",
+    "main.js.map": "/hochu_v_kode/static/js/main.7bd30ac7.chunk.js.map",
     "runtime-main.js": "/hochu_v_kode/static/js/runtime-main.7d3c2c7c.js",
     "runtime-main.js.map": "/hochu_v_kode/static/js/runtime-main.7d3c2c7c.js.map",
     "static/js/2.bb4c58a3.chunk.js": "/hochu_v_kode/static/js/2.bb4c58a3.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.7d3c2c7c.js",
     "static/js/2.bb4c58a3.chunk.js",
-    "static/js/main.f53d87bc.chunk.js"
+    "static/js/main.7bd30ac7.chunk.js"
   ]
 }
