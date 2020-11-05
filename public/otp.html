@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/login.css">
+        <title>Hochu v KODE</title>
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="main">
+                <div align="center" class="login_form">
+                    <form name="otp-form" action="javascript:validateOTP()">
+                        <div class="item">
+                            <label for="otp">Code from SMS</label>
+                            <input type="text" name="otp" required>
+                        </div>
+                        <button type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var OTP = '';
+            for (let i=0; i<5; i++) OTP += Math.floor(Math.random()*10).toString()
+            alert(OTP);
+            console.log('OTP:', OTP);
+            function validateOTP() {
+                const formdata = new FormData(document.forms['otp-form'])
+                const newOTP = formdata.get('otp')
+                if (newOTP == OTP) {
+                    saveUser();
+                    window.location.replace("/home");
+                }
+                else alert('Wrong!')
+            }
+            function saveUser() {
+                const params = new URLSearchParams(location.search);
+                localStorage.setItem('login', params.get('login'));
+                localStorage.setItem('pass', params.get('pass'));
+            }
+        </script>
+
+    </body>
+</html>
