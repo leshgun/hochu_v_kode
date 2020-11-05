@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+## Второе задание
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Требовалось реализовать приложение для просмотра распределенных по категориям карточек с Покемонами.
 
-## Available Scripts
+### Функциональность
 
-In the project directory, you can run:
+Приложение содержит 4 экрана: 
 
-### `npm start`
+#### 1. Экран авторизации
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Страница представляет собой форму авторизации с валидацией соответствующих полей (логина и пароля).
+   
+Авторизация — НЕ серверная, введённые данные достаточно проверить на клиенте.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+~~Можно глянуть в исходник~~
 
-### `npm test`
+#### 2. Экран подтверждения одноразового пароля
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Подтверждение логина реализованное с помощью One Time Password (OTP).
+   
+Достаточно проверки на клиенте как и для первого экрана.
+Генерация OTP - простая заглушка.
 
-### `npm run build`
+~~Имитация входящего сообщения. Если не запомнили - консоль в помощь.~~
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 3. Экран категорий и просмотра карточек
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Выбор категорий и просмотр соответствующего им списка карточек Покемонов.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Изменяя категории в селектах вы получаете данные с сервера.
+   
+**Используется публичное API** – https://pokemontcg.io/.
+   
+#### 4. Просмотр карточки Покемона
 
-### `npm run eject`
+Страница представляет собой отдельный экран с детальной информацией по Покемону.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+К сожалению во время развёртывания на GitPages оказалось, что те переходы на подробную информацию о покемоне,
+что я использовал с самого начала, - не годятся. Поэтому эта функция будет работать только на локальном сервере,
+запущеного так:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```npm start```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Прошу прощения за такую оплошность, не смог полностью справиться за неделю (тестовое задание получил 21 числа)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Вот как выглядит на локальном хостинге:
 
-## Learn More
+![Full size](./static/img/1.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Он также является адаптивным:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Full size](./static/img/2.png)
 
-### Code Splitting
+### Прототипы экранов (Wireframes)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Дизайн интерфейса остался на моё усмотрение, но я всё равно пытался максимально подвести к ТЗ.
 
-### Analyzing the Bundle Size
+- [Макет в Figma](https://www.figma.com/file/dkQb8Bl61Mm91eBCLdd2nW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Pokemons-v2?node-id=0%3A1)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Задания со звёзочкой
 
-### Making a Progressive Web App
+- [+/-] Компонент «Селект категорий» написан самостоятельно. [Макет прототипа](https://www.figma.com/file/dkQb8Bl61Mm91eBCLdd2nW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Pokemons-v2?node-id=6%3A5)
+- [+/-] Пагинация карточек. [Макет прототипа](https://www.figma.com/file/dkQb8Bl61Mm91eBCLdd2nW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Pokemons-v2?node-id=1%3A103)
+- [-] Любые анимации интерфейса
+- [-] Быстрый просмотр покемона в модальном окне по клику на карточку
+- [+] Сохранение сессии авторизованного пользователя после закрытия вкладки браузера. Например, через local storage браузера
+- [+] Адаптивный дизайн
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Стэк
 
-### Advanced Configuration
+- [Create React App](https://create-react-app.dev/)
+- [Function components + React Hooks](https://reactjs.org/docs/hooks-state.html#hooks-and-function-components)
+- [React-router](https://reactrouter.com/web/api/Route/render-func)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Вопросы
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Github Issue к этому репозиторию](https://github.com/martyns0n/kode-internship-test-task/issues)
