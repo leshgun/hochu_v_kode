@@ -45,11 +45,11 @@
 
 Вот как выглядит на локальном хостинге:
 
-![Full size](./static/img/1.png)
+![Full size](./public/img/1.png)
 
 Он также является адаптивным:
 
-![Full size](./static/img/2.png)
+![Full size](./public/img/2.png)
 
 ### Прототипы экранов (Wireframes)
 
